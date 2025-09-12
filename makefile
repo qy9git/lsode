@@ -4,7 +4,7 @@ LDLIBS=
 .PHONY: all clear clean
 all: compile_flags.txt lsode
 
-lsode: lsode.c makefile
+lsode: main.c makefile
 	$(CC) $(CPPFLAGS) $(CFLAGS) $< -o $@ $(LDLIBS)
 
 compile_flags.txt: makefile
