@@ -1,4 +1,4 @@
-CFLAGS=-std=c17 -Wall -Wextra -Wpedantic -Wconversion -Wvla -Warith-conversion -Wno-builtin-declaration-mismatch -Wno-dangling-else
+CFLAGS=-std=c17 -Wall -Wextra -Wpedantic -Wconversion -Wvla -Warith-conversion -Wno-builtin-declaration-mismatch -Wno-dangling-else -ggdb
 CPPFLAGS=
 LDLIBS=
 .PHONY: all clear clean
