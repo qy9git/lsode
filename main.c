@@ -1,4 +1,5 @@
 #define _GNU_SOURCE
+#include <dirent.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <sys/stat.h>
@@ -11,7 +12,7 @@ int main(int argc, char*argv[]){
        struct stat st;
        if(fstat(fd, &st))
            continue;
-       printf("");
+       printf("%04o %ld\n",st.st_mode,st.st_size);
    }
    return 0;
 }

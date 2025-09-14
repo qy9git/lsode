@@ -7,3 +7,4 @@
 -Warith-conversion
 -Wno-builtin-declaration-mismatch
 -Wno-dangling-else
+-ggdb
